@@ -11,24 +11,40 @@
 #     print("Provided number is integer")
 
 #DONE#2. Napisz program ktory sprawdza czy podana przez uzytkownika liczba jest wieszka, mniejsza lub równa zero
-print("Program will check of provided number is > 0 or = 0 or < 0 ")
-number = int(input("Please provide a number you want to check "))
+# print("Program will check of provided number is > 0 or = 0 or < 0 ")
+# number = int(input("Please provide a number you want to check "))
 
-if number > 0:
-    print("Provided number is > 0")
-elif number < 0:
-    print("Provided number is < 0")
-else: 
-    print("Provided number is = 0")
+# if number > 0:
+#     print("Provided number is > 0")
+# elif number < 0:
+#     print("Provided number is < 0")
+# else: 
+#     print("Provided number is = 0")
 
 
+# #DONE #3. Napisz program ktory zapyta uzytkownika o wynik od wynik na egazminie i wyswietli konkretna ocene
+# # 90 - 100 -> 5
+# # 80 - 89 -> 4
+# # 70 - 79 -> 3
+# # 60 - 69 -> 2
+# # ponizej 60 -> 1
 
-#3. Napisz program ktory zapyta uzytkownika o wynik od wynik na egazminie i wyswietli konkretna ocene
-# 90 - 100 -> 5
-# 80 - 89 -> 4
-# 70 - 79 -> 3
-# 60 - 69 -> 2
-# ponizej 60 -> 1
+# score = int(input("Please provide your score points "))
+
+# if score <= 100 and score >= 90:
+#     print("Your score a 5, great job congratulations!")
+# elif score <= 89 and score >= 80:
+#     print("Your score a 4, good job!")
+# elif score <= 79 and score >= 70:
+#     print("Your score is a 3, it's a avarage scores ")
+# elif score <= 69 and score >= 60:
+#     print("Your score is a 2, it's could be better ")
+# elif score < 60 and score >=  1:
+#     print("Unfotunately you have not passed, try again ")
+# else:
+#     print("error, please provide a valid value")
+
+
 #4 Napisz program ktory wyswietli liczby od 0 do 100
 #5 Napisz program ktory wyswietli wszystkie liczby pierwsze od 1 do 100
 #6 Napisz program ktory wyswietli sume wszystkich liczb parzystych z przedzialu 1 - 100

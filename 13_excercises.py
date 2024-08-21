@@ -45,8 +45,29 @@
 #     print("error, please provide a valid value")
 
 
-#4 Napisz program ktory wyswietli liczby od 0 do 100
+#DONE#4 Napisz program ktory wyswietli liczby od 0 do 100
+
+# number = 0
+
+# while number <= 100:
+#     print(number)           
+#     number += 1
+
 #5 Napisz program ktory wyswietli wszystkie liczby pierwsze od 1 do 100
+
+def is_prime(number):
+    if number < 2:
+        return False
+    for i in range(2, int(number ** 0.5) + 1):
+        if number % i == 0:
+            return False
+    return True
+
+for num in range(101):
+    if is_prime(num):
+        print(num)
+
+
 #6 Napisz program ktory wyswietli sume wszystkich liczb parzystych z przedzialu 1 - 100
 #7 Napisz program ktory policzy pole prostokata (uzytkownik mus podac dlugosci bokow)
 #8 Napisz program ktory sprawdzi czy podane imie jest imieniem meskim, czy zenskim(zaloz ze imiona zenskie koncza sie na litere a)

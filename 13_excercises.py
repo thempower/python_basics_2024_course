@@ -53,22 +53,37 @@
 #     print(number)           
 #     number += 1
 
-#5 Napisz program ktory wyswietli wszystkie liczby pierwsze od 1 do 100
+#DONE#5 Napisz program ktory wyswietli wszystkie liczby pierwsze od 1 do 100
 
-def is_prime(number):
-    if number < 2:
-        return False
-    for i in range(2, int(number ** 0.5) + 1):
-        if number % i == 0:
-            return False
-    return True
+# def is_prime(number):
+#     if number < 2:
+#         return False
+#     for i in range(2, int(number ** 0.5) + 1):
+#         if number % i == 0:
+#             return False
+#     return True
 
-for num in range(101):
-    if is_prime(num):
-        print(num)
+# for num in range(101):
+#     if is_prime(num):
+#         print(num)
 
 
 #6 Napisz program ktory wyswietli sume wszystkich liczb parzystych z przedzialu 1 - 100
+
+# Inicjalizacja zmiennej przechowującej sumę liczb parzystych
+sum_even = 0
+
+# Pętla iterująca przez liczby od 1 do 100
+for num in range(1, 101):
+    if num % 2 == 0:  # Sprawdzenie, czy liczba jest parzysta
+        sum_even += num  # Dodanie liczby parzystej do sumy
+
+# Wyświetlenie wyniku
+print("Suma wszystkich liczb parzystych z przedziału 1-100 wynosi:", sum_even)
+    
+#jezeli jest parzysta to dodac ja do sumy
+
+
 #7 Napisz program ktory policzy pole prostokata (uzytkownik mus podac dlugosci bokow)
 #8 Napisz program ktory sprawdzi czy podane imie jest imieniem meskim, czy zenskim(zaloz ze imiona zenskie koncza sie na litere a)
 #9 Pobierz od uzytkownika 3 liczby calkowite i uporzadku jej w kolejnosc od najmniejsze do najwiekszej
